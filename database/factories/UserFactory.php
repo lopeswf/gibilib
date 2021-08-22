@@ -57,19 +57,4 @@ class UserFactory extends Factory
             ];
         });
     }
-
-    /**
-     * Indicate that the model's password is string generated.
-     *
-     * @return \Illuminate\Database\Eloquent\Factories\Factory
-     */
-    public function passwordString()
-    {
-        return $this->state(function (array $attributes) {
-            return [
-                'password' => "12345678",
-                'password_confirmation' => "12345678"
-            ];
-        });
-    }
 }
